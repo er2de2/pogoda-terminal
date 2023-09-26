@@ -1,4 +1,4 @@
-use weather_cli::cmd_line;
+use pogoda_terminal::cmd_line;
 
 #[tokio::main]
 async fn main() {
