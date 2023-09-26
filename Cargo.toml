@@ -1,11 +1,11 @@
 [package]
-name = "weather-cli"
+name = "pogoda-terminal"
 description = "Weather for command-line fans!"
 keywords = ["weather", "open-weather-api"]
 version = "0.3.3"
-authors = ["decaplanet <contact@decaplanet.com>"]
+authors = ["er2de2 <canalonline@protonmail.com>"]
 license = "MIT"
-repository = "https://github.com/decaplanet/weather-cli"
+repository = "https://github.com/er2de2/pogoda-terminal"
 edition = "2021"
 exclude = ["tests/**/*", "*_tests.rs"]
 
