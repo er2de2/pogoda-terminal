@@ -1,3 +1,5 @@
+Polska lokalizacja weather-cli. Podziękowania dla autora projektu.
+
 # weather-cli
 Use simple commands to check the weather in your city. Easily search your city and select it.
 
