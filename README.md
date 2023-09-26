@@ -1,19 +1,17 @@
 Polska lokalizacja weather-cli. Podziękowania dla autora projektu.
 
-# weather-cli
+# pogoda-terminal
 Use simple commands to check the weather in your city. Easily search your city and select it.
 
 
 ## Setup
 You can install the crate with `cargo install` command.
-```bash
-cargo install weather-cli
-```
-Once installed, create an API key on [OpenWeather](https://openweathermap.org). You can register your key using the `weather-cli api-setup` command.
 
-```bash
-weather-cli api-setup --key "EXAMPLE_KEY"
-```
+cargo install pogoda-terminal
+
+Once installed, create an API key on [OpenWeather](https://openweathermap.org). You can register your key using the `pogoda-terminal setup-api` command.
+
+pogoda-terminal setup-api --key "EXAMPLE_KEY"
 
 
 ## Commands
@@ -27,45 +25,43 @@ weather-cli api-setup --key "EXAMPLE_KEY"
 | help         | View the list of commands              |
 
 
-## Use Examples
+## Przykład
 
 1. City Search
-```
-$ weather-cli set-location --query "San Jose"
+
+pogoda-terminal set-location --query Dobra,PL
 
 City list:
-1) San Jose, US (lat: 37.3361663, lon: -121.890591)
-2) San José, CR (lat: 9.9325427, lon: -84.0795782)
-3) San Jose, PH (lat: 12.0612933, lon: 121.9565754)
-4) Sant Josep de sa Talaia, ES (lat: 38.9043608, lon: 1.3178098)
-5) San Jose, US (lat: 40.305598, lon: -89.6028829)
+1) Dobra, PL (lat: 51.9160472, lon: 18.6151806)
+2) Dobra, PL (lat: 51.23583, lon: 17.30418)
+3) Dobra, PL (lat: 53.584659, lon: 15.3073048)
+4) Dobra, PL (lat: 49.7181214, lon: 20.2507691)
+5) Dobra, PL (lat: 53.4872318, lon: 14.385464)
 
 Please select your city.
-1
+3
 
 Do you use Celsius or Fahrenheit?
 1) Celsius
 2) Fahrenheit
-2
+1
 
 Do you want to display emoji? (y/n)
-n
+y
 
-San Jose is now your city!
-I'll use imperial for you.
-```
+Dobra is now your city!
+I'll use metric for you.
 
 2. Weather Check
 
-```
-$ weather-cli check                          
-San Jose (US)
-64.69° / Clouds (scattered clouds)
-H: 69.53°, L: 58.71°
+$ pogoda-terminal check                
 
-- Wind Speed: 3.44 mph,
-- Humidity: 69 %,
-- Pressure: 1018 hPa
-- Sunset: 07:02 PM
-  (Sunrise: 06:56 AM)
-```
+Dobra (PL)
+22.4° / ☁️ Clouds (scattered clouds)
+Max: 23.03°, Min: 20.84°
+
+- Wiatr: 3.18 m/s,
+- Wilgotność: 56 %,
+- Ciśnienie: 1022 hPa
+- Zachód: 18:49
+  (Wschód: 06:50)
