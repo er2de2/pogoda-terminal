@@ -26,8 +26,8 @@ where
 {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         let local_time = match self {
-            EventInfo::Sunrise(sunrise_time) => sunrise_time.format("Sunrise: %I:%M %p"),
-            EventInfo::Sunset(sunset_time) => sunset_time.format("Sunset: %I:%M %p"),
+            EventInfo::Sunrise(sunrise_time) => sunrise_time.format("Wschód: %H:%M"),
+            EventInfo::Sunset(sunset_time) => sunset_time.format("Zachód: %H:%M"),
         };
         write!(f, "{}", local_time)
     }
@@ -123,16 +123,16 @@ pub async fn check() -> Result<()> {
             response_data.weather[0].description
         );
         println!(
-            "H: {}°, L: {}°",
+            "Max: {}°, Min: {}°",
             response_data.main.temp_max, response_data.main.temp_min
         );
 
         println!(
-            "\n- Wind Speed: {} {},",
+            "\n- Wiatr: {} {},",
             response_data.wind.speed, wind_unit
         );
-        println!("- Humidity: {} %,", response_data.main.humidity);
-        println!("- Pressure: {} hPa", response_data.main.pressure);
+        println!("- Wilgotność: {} %,", response_data.main.humidity);
+        println!("- Ciśnienie: {} hPa", response_data.main.pressure);
         println!("- {}", upcoming_event.0);
         println!("  ({})", upcoming_event.1);
 

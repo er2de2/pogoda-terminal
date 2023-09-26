@@ -1,8 +1,8 @@
 [package]
 name = "pogoda-terminal"
-description = "Weather for command-line fans!"
-keywords = ["weather", "open-weather-api"]
-version = "0.3.3"
+description = "Moja pogodynka"
+keywords = ["weather"]
+version = "0.1.0"
 authors = ["er2de2 <canalonline@protonmail.com>"]
 license = "MIT"
 repository = "https://github.com/er2de2/pogoda-terminal"
@@ -21,3 +21,4 @@ anyhow = "1.0.71"
 serde = { version = "1.0.188", features = ["derive"] }
 chrono = "0.4.31"
 num = "0.4.1"
+

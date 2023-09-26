@@ -13,15 +13,15 @@ pub mod user_setup;
 /// Constants for the information of the program.
 pub mod program_info {
     /// The name of the program.
-    pub const PROGRAM_NAME: &str = "weather-cli";
+    pub const PROGRAM_NAME: &str = "pogoda-terminal";
     /// The description of the program.
     pub const PROGRAM_DESCRIPTION: &str = "Weather for command-line fans!";
     /// The authors of the program.
-    pub const PROGRAM_AUTHORS: &str = "decaplanet";
+    pub const PROGRAM_AUTHORS: &str = "er2de2";
     /// URL of the program in crates.io.
-    pub const CRATES_IO_URL: &str = "https://crates.io/crates/weather-cli";
+    pub const CRATES_IO_URL: &str = "https://crates.io/crates/pogoda-terminal";
     /// URL of the program repository in GitHub.
-    pub const REPOSITORY_URL: &str = "https://github.com/decaplanet/weather-cli";
+    pub const REPOSITORY_URL: &str = "https://github.com/er2de2/pogoda-terminal";
 }
 
 /// Constants related to the API and settings.
